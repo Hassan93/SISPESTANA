@@ -1,7 +1,7 @@
 <zk>
       <style src="/widgets/layout/style.css"/>
 
-           <borderlayout vflex="min" height="150px" apply="mz.PestanaRovuma.Hotel_and_Resorts.controller.HeaderController">
+           <borderlayout vflex="min" height="100px" apply="mz.PestanaRovuma.Hotel_and_Resorts.controller.HeaderController">
               <west sclass="complex-layout-header-img">
                   <div>
                  <image sclass="complex-layout-header-img"
