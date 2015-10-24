@@ -1,0 +1,59 @@
+<zk>
+    <style src="/widgets/layout/style.css"/>
+     <div sclass="banerDireito" align="center">
+       <vlayout  >
+	        <div >
+	           <image sclass="icon-login" src="/widgets/Imagens/IconLogin.jpg"/>
+	         </div>
+	        <button label="Login" id="btn_login" width="80px" onClick="" >             
+               <attribute name="onClick"><![CDATA[
+                 if (!loginWin.isVisible())
+                      loginWin.setVisible(true);
+                      loginWin.doHighlighted();
+                   ]]></attribute>
+              </button>
+	   </vlayout> 
+	   
+	   <window id="loginWin" title="Pestana Rovuma Hotel" width="300px" visible="false" minimizable="true" onOK="loginCheck()" border='normal'>
+        <attribute name="onMinimize"><![CDATA[
+        if (self.isMinimized())
+            Clients.evalJavaScript("loginSuccess(" + event.getLeft().replace("px","") + "," + event.getTop().replace("px","") + ")");
+        ]]></attribute>
+        <style>
+        div.minimize {
+            border: 1px solid #79858E;
+            background: #D3E1EC;
+            position: absolute;
+            opacity: 0.8;       
+        }
+        div.loginGrid { 
+            border: none;
+        }
+        td.loginCtl {
+            text-align: center;
+        }
+        td.loginCtl .z-label {
+            color: red;         
+            font-style: italic;
+        }
+        </style>
+        <grid sclass="loginGrid">
+            <columns>
+                <column hflex="1" />
+                <column hflex="2" />
+            </columns>
+            <rows>
+                <row>User Name : <textbox id="name" value="zk" /></row>
+                <row>Password : <textbox id="pwd" type="password"/></row>
+                <row><cell sclass="loginCtl" colspan="2"><vlayout>
+                    <button label="Login" onClick="" width="100px"/>
+                    <label id="mesg" />
+                </vlayout></cell></row>
+            </rows>
+        </grid>
+     
+    </window>
+	   
+	  
+     </div>
+</zk>

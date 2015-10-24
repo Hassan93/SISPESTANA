@@ -1,0 +1,148 @@
+<zk>
+	<style src="/widgets/getting_started/layout/style.css" />
+	<borderlayout vflex="min" apply="">
+		<north sclass="header" height="50px">
+			
+			<label sclass="header-text">Cabeçalho</label>
+			
+		</north>
+		<west title="By Type" collapsible="true" width="160px" vflex="1">
+			<label sclass="header-text">Search Car</label>
+		</west>
+		<center sclass="nested-center">
+		    <borderlayout vflex="min" apply="">
+		        <north height="100px">
+		           <vlayout> 
+		              <hlayout>
+		              <space width="480px"/>
+		              <label sclass="header-text" >Efectuar Reserva</label>
+		              </hlayout>
+		              <hlayout>
+		                 <label sclass="fn-type" >Data Check-In:</label>
+		                 <space width="900px" />
+		                 <label sclass="fn-type" >Data Check-Out:</label>
+		               </hlayout>
+		               <hlayout>
+		                  <datebox id="data_CheckIn" hflex="1" constraint="no empty, no future" width="15px"/>
+		                  <space width="750px" />
+		                  <datebox id="data_CheckOut" hflex="1" constraint="no empty, no today, no future" width="15px"/>
+					    </hlayout>
+					     
+				  </vlayout>
+		        </north>
+		        <center >
+		          <vlayout>
+		             <grid>
+			             <columns>
+						
+							<column label="Categoria dos Quartos" align="center"/>
+							<column label="Nr Máximo de Ocupantes" align="center"/>
+							<column label="Preço por Noite" align="center"/>
+							<column label="Serviços Inclusos" align="center"/>
+							<column label="Nr de Quartos" align="center"/>
+							
+						</columns>
+						<rows>
+						    <row> 
+								<checkbox id="standard" label="Standard   " checked="true"/>
+								<label >2</label>
+								<label >7000 MZN</label>
+								<label >P. Almoço, wi-fi</label>
+								<selectbox>
+								  
+								</selectbox>				
+                             </row>
+                             <row> 
+								<checkbox id="executivo" label="Executivo" checked="false"/>
+								<label >2</label>
+								<label >13000 MZN</label>
+								<label >P. Almoço, wi-fi, Ginásio</label>
+								<selectbox>
+								  
+								</selectbox>			
+                             </row>
+                             <row> 
+								<checkbox id="apartamento" label="Apartame" checked="false"/>
+								<label >5</label>
+								<label >15000 MZN</label>
+								<label >P. Almoço, wi-fi</label>
+								<selectbox>
+								  
+								</selectbox>		
+                             </row>
+						</rows>
+						
+					</grid>
+					<space height="20px" />
+					 <hlayout>
+					   <space width="100px"/>
+				       <label>Título: </label>
+				       <space width="20px"/>
+				       <combobox id="titulo" autodrop="true" tooltiptext="Título">
+				          <comboitem  label="Mr" />
+				          <comboitem  label="Ms"/>
+				          <comboitem  label="Sr"/>
+				          <comboitem  label="Mdm"/>
+				       </combobox>
+				       <space width="60px"/>
+				        <label>Nome: </label>
+				        <space width="20px"/>
+				        <textbox id ="nome" tooltiptext="Primeiro Nome" ></textbox>
+				        <space width="60px"/>
+				        <label>Apelido: </label>
+				        <space width="20px"/>
+				        <textbox id ="apelido" tooltiptext="Último Nome"></textbox>
+				       
+			      </hlayout>
+			       <space height="20px" />
+			      <hlayout>
+			      <space width="100px"/>
+			      <label>Endereço Electrónico: </label>
+				        <space width="20px"/>
+				        <textbox id ="end_Elct" tooltiptext="Exemplo: qualquerCoisa@gmail.com" width="250px"></textbox>
+				        <space width="60px"/>
+				        <label>Confirmação do Endereço Electrónico: </label>
+				         <space width="20px"/>
+				        <textbox id ="_conf_end_Elct" tooltiptext="Exemplo: qualquerCoisa@gmail.com" width="250px"></textbox>
+				        <space height="20px" />
+			      </hlayout>
+			      <space height="20px" />
+			      <hlayout>
+			       <space width="480px"/>
+					   <hlayout>
+					   
+							<button id="primeiro" label="1" disabled="false" width="10px" />
+							<space width="10px"/>
+							<button id="segundo" label="2" disabled="true" width="10px"/>
+							<space width="10px"/>
+							<button id="terceiro" label="3" disabled="true" width="10px"/>
+						
+			            </hlayout>
+			          
+			      </hlayout>
+			       <space height="20px" />
+			      <hlayout>
+			          <space width="400px"/>
+			          <button id="btn_Voltar" label="Voltar" width="100px"/>
+			          <space width="60px"/>
+			          <button id="btn_continuar" label="Continuar" width="100px" />
+			      </hlayout>
+			      
+					</vlayout>
+					
+					
+		        </center>  
+			    <south>
+			     
+			    </south>
+			    
+			</borderlayout>
+		   </center>
+		<south sclass="footer" height="50px">
+			<vbox align="center" pack="center" width="100%" sclass="footer-box">
+				<label sclass="footer_text">Copyright © 2015-2016</label>
+				<label sclass="footer_text">Pestana Corporation All rights reserved.</label>
+			</vbox>
+		</south>
+	</borderlayout>
+</zk>

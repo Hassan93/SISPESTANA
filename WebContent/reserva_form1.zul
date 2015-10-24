@@ -1,0 +1,140 @@
+<zk>
+	<style src="/widgets/layout/style.css" />
+	
+
+	<borderlayout sclass="complex-layout" apply="mz.PestanaRovuma.Hotel_and_Resorts.controller.Reserva_form1Controller">
+		<north border="0">
+			 <div>
+              <include src="/header.zul"  />
+            </div>
+		</north>
+		<west vflex="1">
+			
+			<include src="/banerEsquerda.zul"/>
+		</west >
+		<east hflex="1">
+		  <include src="/barnerDireito.zul" />
+		</east>
+		<center sclass="inner-border">
+		    <borderlayout  apply="" >
+		        <north size="25%"> 
+			          <vlayout spacing="2px">
+				         <div align="center">
+				              <label sclass="header-text" >Efectuar Reserva</label>
+				         </div>
+			             <hlayout spacing="75%">
+			                <div align="left">
+			                  <vlayout>
+			                    <label sclass="fn-type" >Data Check-In:</label>
+			                    <datebox id="date_CheckIn" hflex="1" constraint="no empty, no past"/>
+			                 </vlayout>
+			              </div>
+			              <div align="right">
+			               <vlayout>
+			                  <label sclass="fn-type" >Data Check-Out:</label>
+			                  
+			                  <datebox id="date_CheckOut" hflex="1" constraint="no empty, no today, no past"/>
+						    </vlayout>
+						
+			              </div>
+			            </hlayout>
+			          </vlayout>
+		             
+		         </north>
+		         <center>
+		            <div >
+		               <grid>
+			             <columns>
+						
+							<column label="Categoria dos Quartos" align="center"/>
+							<column label="Nr Máximo de Ocupantes" align="center"/>
+							<column label="Preço por Noite" align="center"/>
+							<column label="Serviços Inclusos" align="center"/>
+							<column label="Nr de Quartos" align="center"/>
+							
+						</columns>
+						<rows>
+						    <row> 
+								<checkbox id="chck_standard" label="Standard   " checked="true"/>
+								<label >2</label>
+								<label >7000 MZN</label>
+								<label >P. Almoço, wi-fi</label>
+								<combobox id="cmb_standard">
+								  
+								</combobox>				
+                             </row>
+                             <row> 
+								<checkbox id="chck_executivo" label="Executivo" checked="false"/>
+								<label >2</label>
+								<label >13000 MZN</label>
+								<label >P. Almoço, wi-fi, Ginásio</label>
+								<combobox id="cmb_executivo">
+								  
+								</combobox>			
+                             </row>
+                             <row> 
+								<checkbox id="chck_apartamento" label="Apartame" checked="false"/>
+								<label >5</label>
+								<label >15000 MZN</label>
+								<label >P. Almoço, wi-fi</label>
+								<combobox id="cmb_apartamento">
+								  
+								</combobox>		
+                             </row>
+						</rows>
+						
+					</grid>
+					<div align="center">
+					  <space height="10px"/>
+					  <vlayout spacing="10px">
+					    <hlayout >
+				          <label>Título: </label>
+				          <combobox id="cmb_titulo" autodrop="true" tooltiptext="Título">
+				          <comboitem  label="Mr" />
+				          <comboitem  label="Ms"/>
+				          <comboitem  label="Sr"/>
+				          <comboitem  label="Mdm"/>
+				          </combobox>
+				          <label>Nome: </label>
+				       
+				        <textbox id ="txt_nome" tooltiptext="Primeiro Nome" ></textbox>
+				        <space width="60px"/>
+				        <label>Apelido: </label>
+				        <space width="20px"/>
+				        <textbox id ="txt_apelido" tooltiptext="Último Nome"></textbox>
+				       
+			          </hlayout>
+			      
+			          <hlayout>
+	   			         <label>Endereço Electrónico: </label>
+				         <textbox id ="txt_end_Elct" tooltiptext="Exemplo: qualquerCoisa@gmail.com" width="250px"></textbox>
+				        
+				         <label>Confirmação do Endereço Electrónico: </label>
+				         <textbox id ="txt_conf_end_Elct" tooltiptext="Exemplo: qualquerCoisa@gmail.com" width="250px"></textbox>
+			           </hlayout>
+			           <hlayout>
+					   
+							<button id="btn_primeiro" label="1" disabled="false" width="10px" />
+							<space width="10px"/>
+							<button id="btn_segundo" label="2" disabled="true" width="10px"/>
+							<space width="10px"/>
+							<button id="btn_terceiro" label="3" disabled="true" width="10px"/>
+						</hlayout>
+						<hlayout>
+			          
+			                  <button id="btn_Voltar0" label="Voltar" width="100px"/>
+			                   
+			                   <button id="btn_continuar0" label="Continuar" width="100px" />
+			             </hlayout>
+			       </vlayout>
+			     </div>
+			    </div>
+		     </center>  
+			 </borderlayout>
+        </center>    
+		<south sclass="footer" height="50px">
+			<include src="/footer.zul"/>
+		</south>
+	</borderlayout>
+	
+</zk>

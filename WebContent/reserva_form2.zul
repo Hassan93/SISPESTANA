@@ -1,0 +1,141 @@
+<zk>
+	<style src="/widgets/getting_started/layout/style.css" />
+	<borderlayout vflex="min" apply="">
+		<north sclass="header" height="50px">
+			
+			<label sclass="header-text">Cabeçalho</label>
+			
+		</north>
+		<west title="By Type" collapsible="true" width="160px" vflex="1">
+			<label sclass="header-text">Search Car</label>
+		</west>
+		<center sclass="nested-center">
+		    <borderlayout vflex="min" apply="">
+		        <north height="200px">
+		           
+		           <vlayout> 
+		              <hlayout>
+		               	<space width="480px"/>
+		             	 <label sclass="header-text" >Efectuar Reserva</label>
+		              </hlayout>
+		              <space height="10px"/>
+		              <hlayout>
+		                 <space width="480px"/>
+		                 <label sclass="fn-type" >Nome :</label>
+		                 <space width="20px" />
+		                 <label sclass="fn-type"  value="Edson Luis"></label>
+		               </hlayout>
+		                 <hlayout>
+		                 <space width="480px"/>
+		                 <label sclass="fn-type" >E-mail :</label>
+		                 <space width="20px" />
+		                 <label sclass="fn-type"  value="edsonLuis@gmail.com"></label>
+		               </hlayout> 
+		                
+		               		<hlayout>
+			                 <space width="480px"/>
+				               <label>Pais: </label>
+						       <space width="20px"/>
+						       <combobox id="pais" autodrop="true" tooltiptext="Pais de Origem">
+					          <comboitem  label="Portugal" />
+					          <comboitem  label="EUA"/>
+					          <comboitem  label="Africa de Sul"/>
+					          <comboitem  label="Japão"/>
+					       </combobox>
+					       </hlayout>
+				       <space height="10px"/>
+				       <hlayout>
+				       <space width="480px"/>
+				        <label>Celular: </label>
+				        <space width="20px"/>
+				        <textbox id ="celular" tooltiptext="Contacto celular" ></textbox>
+					    </hlayout>
+					   </vlayout>
+					  
+				  
+				 
+		        </north>
+		        <center >
+		          <vlayout>
+		             
+		              <hlayout>
+		               	<space width="480px"/>
+		             	 <label sclass="header-text" >Garantia da Reserva</label>
+		              </hlayout>
+		              
+		               <space height="10px"/>
+					   <hlayout>
+					    <space width="300px"/>
+				       <label>Tipo de Cartãod de Credito: </label>			       
+				       <space width="20px"/>
+				       <combobox id="tipoCartao" autodrop="true" tooltiptext="Título">
+				          <comboitem  label="Visa" />
+				          <comboitem  label="MasterCasd"/>
+				          
+				       </combobox>
+				       <space width="60px"/>
+				       <button id="semCartao" label="Não Tenho Cartão"></button>
+				        </hlayout>
+				        <space height="10px"/>
+				        <hlayout>
+					        <space width="300px"/>
+					        <label>Número do Cartão :</label>
+					        <space width="20px"/>
+					        <textbox id ="numCartao" tooltiptext="Último Nome" width="230px"></textbox>
+			     		 </hlayout>
+			       <space height="20px" />
+			       <hlayout>
+			            <space width="300px"/>
+					        <label>Data que Expira :</label>
+					        <space width="20px"/>
+		                  <datebox id="data_Expira" hflex="1" constraint="no empty, no past" />
+		                 <space width="500px"/>
+		           </hlayout>
+		           <space height="20px" />
+			      <hlayout>
+			      <space width="300px"/>
+			      <label>Código do Cartão :</label>
+				        <space width="20px"/>
+				        <textbox id ="cod_cartao" tooltiptext="código do cartão" width="230px"></textbox>
+				        
+			      </hlayout>
+			      <space height="20px" />
+			      <hlayout>
+			       <space width="480px"/>
+					   <hlayout>
+					   
+							<button id="primeiro" label="1" disabled="false" width="10px" />
+							<space width="10px"/>
+							<button id="segundo" label="2" disabled="false" width="10px"/>
+							<space width="10px"/>
+							<button id="terceiro" label="3" disabled="true" width="10px"/>
+						
+			            </hlayout>
+			          
+			      </hlayout>
+			       <space height="20px" />
+			      <hlayout>
+			          <space width="400px"/>
+			          <button id="btn_Voltar1" label="Voltar" width="100px"/>
+			          <space width="60px"/>
+			          <button id="btn_continuar1" label="Continuar" width="100px" />
+			      </hlayout>
+			      
+					</vlayout>
+					
+					
+		        </center>  
+			    <south>
+			     
+			    </south>
+			    
+			</borderlayout>
+		   </center>
+		<south sclass="footer" height="50px">
+			<vbox align="center" pack="center" width="100%" sclass="footer-box">
+				<label sclass="footer_text">Copyright © 2015-2016</label>
+				<label sclass="footer_text">Pestana Corporation All rights reserved.</label>
+			</vbox>
+		</south>
+	</borderlayout>
+</zk>

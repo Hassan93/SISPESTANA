@@ -1,0 +1,104 @@
+.header{
+	background-color:#F7F7F7;
+	/*padding-top: 68px;*/
+	/*margin-bottom: 50px;*/	
+}
+.pagina{
+	padding-bottom: 2px;
+	margin-left: 3px;
+	margin-right: 3px
+	
+}
+.breeze .complex-layout, .breeze .complex-layout .z-south,
+        .breeze .complex-layout .z-west { background: #F7F7F7; }
+        .z-borderlayout { background: #FFFFFF } .complex-layout .z-north
+        { background: #008BB6; } img.complex-layout-header-img {
+        padding: 0 10px; } .complex-layout-header-label { position:
+        relative; top: 30px; padding-left: 40px; font-size: 24px;
+        color: White; font-weight: bold; } .inner-border, .inner-border
+        .z-north, .inner-border .z-west, .inner-border .z-south,
+        .inner-border .z-east { background: #FFFFFF; } .dl-link {
+        text-decoration: none; cursor: pointer; }
+
+ .breeze .complex-layout, .breeze .complex-layout .z-south,
+        .breeze .complex-layout .z-west { background: #F7F7F7; }
+        
+        .complex-layout .z-north
+        { background: #008BB6; }
+.complex-layout-header-img {
+         /*background-image: url("/Imagens/Header.jpg");*/
+        padding: 0 10px; }
+        
+ .icon-login{
+    background-image: url("/Imagens/IconLogin.jpg");*/
+        padding: 0 10px;
+ }
+        
+.header div{
+	padding-left: 10px;
+	padding-top: 10px;
+	float:right
+}
+
+.header-text{
+	font-size: 26px;
+	font-style: bold;
+}
+.footer{
+	background-color: #F0F0F0;
+}
+.footer-box{
+	padding-top: 10px;
+}
+
+.nested-center .z-west,.nested-center .z-center{
+	border-top:0px;
+	border-left:0px;
+	border-bottom:0px;
+}
+.nested-center .z-center{
+	padding:1px 0 0 1px;
+}
+
+.fn-panel1{
+	margin: 2px;
+	padding-top: 4px;
+	background-color: #FAFAFA;
+}
+.fn-panel2{
+	margin: 2px;
+	background-color: #FAFAFA;
+}
+
+.fn-title{
+	font-weight:bold;
+	font-size: 14px;
+}
+.fn-subpanel{
+	padding: 2px 0 10px 5px;
+}
+.fn-type{
+	color: black;
+    font-size: 14px;
+    text-decoration: none;
+    font-style: italic;
+    padding: 2px 0;
+}
+.fn-condi .z-checkbox-cnt{
+	color: black;
+    font-size: 14px;
+}
+
+.campo_pesquisa{
+	font: 12px,verdana;
+	margin-top: 10px;
+	padding: 5px;
+	float: right;
+	
+	
+}
+
+.banerDireito{
+	display: block;
+	padding-top: 10px;
+}

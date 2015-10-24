@@ -1,0 +1,47 @@
+<zk>
+      <style src="/widgets/layout/style.css"/>
+
+           <borderlayout vflex="min" height="150px" apply="mz.PestanaRovuma.Hotel_and_Resorts.controller.HeaderController">
+              <west sclass="complex-layout-header-img">
+                  <div>
+                 <image sclass="complex-layout-header-img"
+                        src="/widgets/Imagens/Header.jpg"/>
+                    
+                        </div>
+              </west>
+              
+              <center sclass="header">
+                <div>
+                    
+                </div>
+              </center>
+              <east width="280px" sclass="header" >
+               <div  sclass="campo_pesquisa">
+                    
+                        <textbox id="txt_pesquisa" value="" tooltiptext="Pesquise aqui"/>
+                        
+                        <button label="pesquisar"
+                            onClick="" />
+                       
+                   
+                      
+                </div>
+              
+              </east>
+              
+              <south>
+              	    
+                 
+              </south>
+              
+           </borderlayout>
+           
+           <div align="center">
+               
+                      <include src="/menuprincipal.zul"/>
+                  
+           </div>
+       
+       
+            
+</zk>
