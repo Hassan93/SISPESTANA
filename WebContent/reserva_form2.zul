@@ -28,16 +28,17 @@
 		        </north>
 		        <center >
 		        
-		          <vlayout style="padding-left: 5%;">
-		             
-		              <hlayout>
+		          <vlayout spacing="">
+		             <div align="center">
+		                <hlayout>
 		               	
 		             	 <label sclass="header-text" >Garantia da Reserva</label>
 		             	  <space height="10px"/>
 		             	
 		              </hlayout>
-		              
+		              <div align="right">
 		              <hlayout >
+		                 
 		               	     <label sclass="fn-type" >Nome :</label>
 		                     <label sclass="fn-type"  value="Edson Luis"></label>
 		                  </hlayout>
@@ -46,7 +47,9 @@
 		                     <label sclass="fn-type" >E-mail :</label>
 		                 
 		                     <label sclass="fn-type"  value="edsonLuis@gmail.com"></label>
-		                  </hlayout> 
+		                  </hlayout>
+		                </div>
+		                 
 		               	  <hlayout>
 			                 
 				               <label>Pais: </label>
@@ -122,8 +125,8 @@
 			          <space width="60px"/>
 			          <button id="btn_continuar1" label="Continuar" width="100px" />
 			      </hlayout>
-			      
-					</vlayout>
+			</div>      
+			</vlayout>
 					
 					
 		        </center>  
