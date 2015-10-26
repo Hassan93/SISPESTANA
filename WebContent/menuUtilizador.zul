@@ -1,0 +1,81 @@
+ <zk>
+ <style>
+ 
+ .z-toolbarbutton-cnt 
+    { 
+        background:url('imgs/tab-nav-1.gif') repeat-y scroll 0 0 transparent; 
+        color: #FFFFFF; 
+        float: left;
+        font-size: 13px; 
+        font-family: arial, sans-serif; 
+        height: 20px;
+        margin-right: 0; 
+        padding: 8px 0 5px 20px; 
+        position: relative;
+        text-decoration: none; width: 187px; z-index: 1;
+    }
+
+    .selected .z-toolbarbutton-cnt {
+        background:url('imgs/tab-hov.gif') no-repeat scroll 0 0 transparent;
+        color: #FFFFFF;
+        text-decoration: none;          
+    }
+
+
+    .z-toolbarbutton 
+    { 
+        cursor: pointer; display: table-row-group;
+    } 
+
+     .z-toolbarbutton-over  .z-toolbarbutton-cnt
+    { 
+        background:url('imgs/tab-hov.gif') no-repeat scroll 0 0 transparent; 
+        color: #FFFFFF;
+        text-decoration: none; 
+    }
+
+    .tabtop 
+    { 
+        background:url('imgs/tab-top.jpg') no-repeat scroll     0 0 transparent; 
+        float: left; 
+        height: 64px; 
+        width: 990px; 
+    }
+
+    tr.z-vbox-sep 
+    { 
+        height: 0; 
+    }
+
+    .flbltitle.z-label 
+    {
+        font-size: 20px;
+        font-weight: bolder;
+        color: #0C6BA8;
+    }
+
+</style>
+<div apply="">
+    <separator />
+    <vbox>
+        <groupbox width="100px" mold="3d">
+            <vbox>
+                <toolbarbutton id="Home" label="Home"
+                    forward="onClick=onClickMenu()" />
+                <menubar width="100px" scrollable="true"
+                    orient="vertical">
+                    <menu label="Menu1">
+                    </menu>
+                    <menu label="Menu2">
+                       
+                    </menu>
+                    <menu label="Menu3">
+                       
+                    </menu>
+                </menubar>
+            </vbox>
+        </groupbox>
+    </vbox>
+</div>
+
+</zk>
